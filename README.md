@@ -4,7 +4,7 @@ This repository contains a simple Node.js Express application for managing notes
 ### Installation
 #### 1. Clone the Repository
 
-`git clone https://github.com/your-username/notesread-api.git
+`git clone [https://github.com/your-username/notesread-api.git](https://github.com/CharanKumarMadipadiga/SQLite-Notesread.git)
 cd notesread-api`
 #### 2. Install Dependencies
 Make sure you have Node.js and npm installed. Then, install the required packages using the following command:
