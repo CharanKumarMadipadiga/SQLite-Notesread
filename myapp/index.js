@@ -57,7 +57,7 @@ const authenticationToken = (request, response, next) => {
 
 // get all notes API GET Method
 
-app.get("/notes", authenticationToken, async (request, response) => {
+app.get("/notes", async (request, response) => {
   const getNotesQuery = `
     SELECT
     *
