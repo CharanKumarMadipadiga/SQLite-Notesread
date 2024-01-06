@@ -1,21 +1,67 @@
-GET http://localhost:3000/notes
+
+// Get all Notes Request
+GET http://localhost:3000/notes 
+
+
 
 ###
 
-POST http://localhost:3000/notes
+// Register request 
+POST http://localhost:3000/register
 Content-Type: application/json
 
 {
-
-    "title": "Shiva-notes",
-    "data": "This is Shiva notes",
-    "created_at": "2023-11-28"
+    "username": "Charan Kumar",
+    "password": "Charan@123",
+    "gender": "M"
 }
 
 ###
 
-GET http://localhost:3000/notes/3
+// Login Request
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Charan Kumar",
+    "password": "Charan@123"
+}
 
 ###
 
-DELETE http://localhost:3000/notes/
+// Create Notes Request
+POST http://localhost:3000/notes
+Content-Type: application/json
+Authorization: Bearer JWT_TOKEN
+
+{
+
+    "title": "Lalitha-notes",
+    "data": "This is Lalitha notes",
+    "created_at": "2022-12-17"
+}
+
+###
+
+// Get particular Notes Request
+GET http://localhost:3000/notes/3
+
+
+###
+
+//Update Notes Request
+PUT http://localhost:3000/notes/4
+Content-Type: application/json
+Authorization: Bearer JWT_TOKEN
+
+{
+    "title": "Prabhas-notes",
+    "data": "This is prabhas notes",
+    "created_at": "2023-10-20"
+}
+
+###
+
+// Delete Notes Request
+DELETE http://localhost:3000/notes/8
+Authorization: Bearer JWT_TOKEN
