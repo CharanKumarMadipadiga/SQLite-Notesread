@@ -1,0 +1,21 @@
+GET http://localhost:3000/notes
+
+###
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+
+    "title": "Shiva-notes",
+    "data": "This is Shiva notes",
+    "created_at": "2023-11-28"
+}
+
+###
+
+GET http://localhost:3000/notes/3
+
+###
+
+DELETE http://localhost:3000/notes/
