@@ -114,7 +114,7 @@ app.post("/login", async (request, response) => {
     const dbUser = await db.get(fetchUserQuery);
 
     if (dbUser === undefined) {
-      response.status(200);
+      response.status(400);
       response.send("Invalid user");
     } else {
       const isPasswordMatched = await bcrypt.compare(password, dbUser.password);
